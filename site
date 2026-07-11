@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #cbd5e1;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        section {
+            margin: 3rem 0;
+        }
+        h2 {
+            color: #fff;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hello, I'm [Your Name]</h1>
+            <p class="subtitle">Web Developer & Tech Enthusiast</p>
+            <p>Welcome to my personal corner of the internet. I build clean, functional, and user-friendly web projects.</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am passionate about learning new technologies, writing clean code, and solving real-world problems. Currently focusing on mastering frontend development and exploring cloud hosting environments.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project One</h3>
+                    <p>A brief description of a cool web application or tool you built. Built using HTML, CSS, and JS.</p>
+                    <a href="#">View Code →</a>
+                </div>
+                <div class="card">
+                    <h3>Project Two</h3>
+                    <p>Another project showcasing your skills. You can link this directly to its live demo or GitHub repository.</p>
+                    <a href="#">View Code →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Connect With Me</h2>
+            <p>Feel free to reach out if you want to collaborate on a project or just say hi!</p>
+            <div class="links">
+                <a href="https://github.com[your-username]">GitHub</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
